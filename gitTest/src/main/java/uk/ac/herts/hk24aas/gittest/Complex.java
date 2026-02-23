@@ -8,31 +8,15 @@ package uk.ac.herts.hk24aas.gittest;
  *
  * @author harshdeepkumar
  */
-public class Complex 
-{
-    private double real;
-    private double imaginary;
+public class Complex {
     
-    Complex(double real, double imaginery)
-    {
-        this.real = real;
-        this.imaginary = imaginery;
+    
+    public Complex subtract(Complex other) {
+        
+        return other;
     }
-    Complex(double real)
-    {
-        this.real = real;
-    }
-
-    public double getReal() {
-        return real;
-    }
-
-    public double getImaginary() {
-        return imaginary;
-    }
-
-    
-    
-    
-    
 }
+
+    
+    
+    
