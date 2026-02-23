@@ -49,4 +49,9 @@ public class Complex
     {
         return new Complex(getRealPart() / other.getRealPart(), getImaginaryPart() / other.getImaginaryPart());
     }
+    
+    public String toString()
+    {
+        return ("");
+    }
 }
