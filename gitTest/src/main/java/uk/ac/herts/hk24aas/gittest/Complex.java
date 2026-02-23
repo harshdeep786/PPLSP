@@ -39,6 +39,11 @@ public class Complex
     {
         return new Complex(getReal() - other.getReal(), getImaginary() - other.getImaginary());
     }
+    
+    public Complex multiply(Complex other)
+    {
+        return new Complex(getReal() * other.getReal(), getImaginary() * other.getImaginary());
+    }
  
     
 }
