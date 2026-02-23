@@ -49,4 +49,9 @@ public class Complex
     {
         return new Complex(getRealPart() / other.getRealPart(), getImaginaryPart() / other.getImaginaryPart());
     }
+    
+    public Complex abs()
+    {
+        return new Complex(Math.abs(getRealPart()), Math.abs(getImaginaryPart()));
+    }
 }
