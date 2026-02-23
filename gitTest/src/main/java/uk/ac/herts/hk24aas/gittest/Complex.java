@@ -30,7 +30,11 @@ public class Complex
     public double getImaginary() {
         return imaginary;
     }
-
+    
+    public void add(Complex other)
+    {
+        
+    }
     
     
     
