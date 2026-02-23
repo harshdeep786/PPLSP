@@ -33,7 +33,7 @@ public class Complex
     
     public Complex add(Complex other)
     {
-        return other;
+        return new Complex(getReal() + other.getReal());        
     }
     public Complex subtract(Complex other)
     {
