@@ -37,7 +37,7 @@ public class Complex
     }
     public Complex subtract(Complex other)
     {
-        return other;
+        return new Complex(getReal() - other.getReal(), getImaginary() - other.getImaginary());
     }
  
     
