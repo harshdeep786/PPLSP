@@ -33,7 +33,7 @@ public class Complex
     
     public Complex add(Complex other)
     {
-        return new Complex(getReal() + other.getReal());        
+        return new Complex(getRealPart() + other.getRealPart());        
     }
     public Complex subtract(Complex other)
     {
@@ -42,7 +42,7 @@ public class Complex
     
     public Complex multiply(Complex other)
     {
-        return new Complex(getReal() * other.getReal(), getImaginary() * other.getImaginary());
+        return new Complex(getRealPart() * other.getRealPart(), getImaginaryPart() * other.getImaginaryPart());
     }
  
     public Complex divide(Complex other)
