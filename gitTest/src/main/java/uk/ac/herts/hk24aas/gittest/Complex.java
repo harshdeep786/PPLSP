@@ -23,11 +23,11 @@ public class Complex
         this.real = real;
     }
 
-    public double getReal() {
+    public double getRealPart() {
         return real;
     }
 
-    public double getImaginary() {
+    public double getImaginaryPart() {
         return imaginary;
     }
     
@@ -37,7 +37,7 @@ public class Complex
     }
     public Complex subtract(Complex other)
     {
-        return new Complex(getReal() - other.getReal(), getImaginary() - other.getImaginary());
+        return new Complex(getRealPart() - other.getRealPart(), getImaginaryPart() - other.getImaginaryPart());
     }
     
     public Complex multiply(Complex other)
@@ -45,5 +45,8 @@ public class Complex
         return new Complex(getReal() * other.getReal(), getImaginary() * other.getImaginary());
     }
  
-    
+    public Complex divide(Complex other)
+    {
+        return new Complex(getRealPart() / other.getRealPart(), getImaginaryPart() / other.getImaginaryPart());
+    }
 }
